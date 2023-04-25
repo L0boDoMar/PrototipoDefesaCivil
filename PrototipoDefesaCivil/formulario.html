@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Defesa Civil</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Defesa Civil</h1>
+        <p id="subtitulo"><strong>Alerta de Chuva em SP</strong></p>
+    </div>
+    <form action="post">
+        <fieldset class="grupo">
+            <label><Strong>Informe Sua Localização</Strong> </label> <br><br>
+            <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" required>
+            </div>
+            <div class="campo">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" required>
+            </div>
+            <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><Strong>Caso tenha Interesse em Receber Alertas, Informe seu <br>
+                    Celular (Opcional)</Strong> </label>
+            <input type="text" name="celular" id="celular">
+        </div>
+
+        <div class="campo">
+            <label for=""><Strong>Informe o Nível da Água nas Ruas</Strong> </label>
+            <label for="">
+                <input type="radio" name="nivel" value="canela" checked>Canela
+            </label>
+            <label for="">
+                <input type="radio" name="nivel" value="joelho">Joelho
+            </label>
+            <label for="">
+                <input type="radio" name="nivel" value="cintura">Cintura
+            </label>
+        </div>
+
+
+        <div class="campo">
+            <label><Strong>Informe os Perigos Adicionais na Área</Strong> </label>
+            <input type="checkbox" id="perigos" name="perigos" value="Rede Elétrica Danificada"> Rede Elétrica Danificada<br>
+            <input type="checkbox" id="perigos" name="perigos" value="Queda de Galhos/ Árvores"> Queda de Galhos/ Árvores <br>
+            <input type="checkbox" id="perigos" name="perigos" value="Engarrafamento"> Engarrafamento<br>
+            <input type="checkbox" id="perigos" name="perigos" value="Saída Escolar Comprometida"> Saída Escolar Comprometida<br>
+            <input type="checkbox" id="perigos" name="perigos" value="Bueiro Sem Tampa"> Bueiro Sem Tampa<br>
+            <input type="checkbox" id="perigos" name="perigos" value="Correnteza"> Correnteza<br>
+
+        </div>
+
+
+        <div class="campo">
+            <label><Strong>Termos de Uso</Strong> </label>
+            <input type="checkbox" id="termos" name="termos" value="Declaro que li e aceito os termos de uso"> Declaro que li e aceito os termos de uso. <br>
+            <input type="checkbox" id="termos" name="termos" value="Desejo receber mensagens de texto da Defesa Civil"> Desejo receber mensagens de texto da Defesa Civil.<br>
+            
+        </div>
+
+        <div>
+            <Button type="submit" class="botao">Enviar</Button>
+        </div>
+    
+    </form>
+    
+</body>
+
+</html>
